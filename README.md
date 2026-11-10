@@ -24,7 +24,7 @@ Design baseline only. There are no running endpoints, financial records or produ
 
 ## Local checkout
 
-After source has been published, use the complete remote URL:
+Clone the repository using the complete remote URL:
 
 ```bash
 git clone https://github.com/josephchitalu2/chitalu-business-automation.git
@@ -32,3 +32,7 @@ cd chitalu-business-automation
 ```
 
 Do not paste Markdown links into terminal commands. A Git remote is a literal URL such as the one above.
+
+## Maintenance
+
+[Verification](docs/TESTING.md) · [Contributing](CONTRIBUTING.md) · [Security reporting](SECURITY.md)
