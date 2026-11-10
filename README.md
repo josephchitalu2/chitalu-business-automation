@@ -1,0 +1,34 @@
+# Chitalu Business Automation
+
+**Chitalu Software Solutions**
+
+A planned operations platform for customer credit, repayment reconciliation, cash closing, expenses, approvals and follow-up tasks. The repository begins with the agreed architecture and API design. The application is not yet implemented or deployed; the first delivery milestone is an executable credit-to-payment workflow with tests.
+
+## Product scope
+
+- Customer credit sales, partial repayments and statements.
+- Daily cash closing with opening float, cash movements and discrepancies.
+- Expense requests, approvals and payment tracking.
+- Scheduled follow-up tasks and owner reporting.
+- Role-based access, correction history and restore-tested backups.
+
+## Architecture
+
+Flask application factory with separate domain models, services, repositories and HTTP routes. SQLite is a candidate for a single-instance local installation; a hosted multi-instance service should use an appropriate managed database. Production data must not live in a serverless deployment's temporary filesystem.
+
+Read [architecture](docs/ARCHITECTURE.md), [API proposal](docs/API.md) and [delivery plan](docs/DELIVERY_PLAN.md).
+
+## Status
+
+Design baseline only. There are no running endpoints, financial records or production credentials in this repository. No passing application tests are claimed yet. The aim is a complete, tested release; roadmap milestones organize implementation rather than substitute for working features.
+
+## Local checkout
+
+After source has been published, use the complete remote URL:
+
+```bash
+git clone https://github.com/josephchitalu2/chitalu-business-automation.git
+cd chitalu-business-automation
+```
+
+Do not paste Markdown links into terminal commands. A Git remote is a literal URL such as the one above.
