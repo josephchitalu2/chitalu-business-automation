@@ -16,7 +16,7 @@ A planned operations platform for customer credit, repayment reconciliation, cas
 
 Flask application factory with separate domain models, services, repositories and HTTP routes. SQLite is a candidate for a single-instance local installation; a hosted multi-instance service should use an appropriate managed database. Production data must not live in a serverless deployment's temporary filesystem.
 
-Read [architecture](docs/ARCHITECTURE.md), [API proposal](docs/API.md) and [delivery plan](docs/DELIVERY_PLAN.md).
+Read the [architecture](docs/ARCHITECTURE.md), [API proposal](docs/API.md) and [delivery plan](docs/DELIVERY_PLAN.md). The [first delivery walkthrough](docs/FIRST_SLICE.md) specifies the results to verify for a credit sale and partial repayments.
 
 ## Status
 
@@ -31,7 +31,7 @@ git clone https://github.com/josephchitalu2/chitalu-business-automation.git
 cd chitalu-business-automation
 ```
 
-Do not paste Markdown links into terminal commands. A Git remote is a literal URL such as the one above.
+Run `python3 scripts/check_docs.py` from this directory to check local documentation links.
 
 ## Maintenance
 

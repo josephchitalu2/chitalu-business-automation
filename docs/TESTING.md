@@ -6,6 +6,6 @@ Requires Python 3.10+; no third-party dependencies for these checks. Run from th
 python3 scripts/check_docs.py
 ```
 
-This repository currently contains a design baseline. The documentation checker is not an application test; there are no implemented business endpoints or deployed security sensors to verify yet.
+The checker verifies relative Markdown links. The business endpoints are still proposals, so there are no application tests yet. Use the [first delivery walkthrough](FIRST_SLICE.md) to build tests once the credit and repayment workflow exists.
 
-GitHub Actions runs the available checks on pushes and pull requests. Record actual browser, environment, service-integration and recovery tests when those features exist. Do not interpret passing link checks as production or security verification.
+GitHub Actions runs the checker on pushes to `main` and on pull requests. Record actual browser, environment, service-integration and recovery tests when those features exist. Do not interpret passing link checks as production or security verification.

@@ -2,7 +2,7 @@
 
 ## Decisions
 
-The proposed application factory and grouping by credit, reconciliation and approval are a sound starting point. Business rules and data access must have explicit homes so that controllers do not become the entire application.
+This is the proposed file layout. Keep credit, reconciliation and approval rules in services, database access in repositories, and HTTP request handling in routes.
 
 | Path | Responsibility |
 |---|---|
