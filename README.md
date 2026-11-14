@@ -4,6 +4,8 @@
 
 A planned operations platform for customer credit, repayment reconciliation, cash closing, expenses, approvals and follow-up tasks. The repository begins with the agreed architecture and API design. The application is not yet implemented or deployed; the first delivery milestone is an executable credit-to-payment workflow with tests.
 
+Start with the [credit and repayment walkthrough](docs/FIRST_SLICE.md). It specifies the expected balances, how repayment retries work and which records the first implementation must write together.
+
 ## Product scope
 
 - Customer credit sales, partial repayments and statements.
@@ -16,7 +18,7 @@ A planned operations platform for customer credit, repayment reconciliation, cas
 
 Flask application factory with separate domain models, services, repositories and HTTP routes. SQLite is a candidate for a single-instance local installation; a hosted multi-instance service should use an appropriate managed database. Production data must not live in a serverless deployment's temporary filesystem.
 
-Read the [architecture](docs/ARCHITECTURE.md), [API proposal](docs/API.md) and [delivery plan](docs/DELIVERY_PLAN.md). The [first delivery walkthrough](docs/FIRST_SLICE.md) specifies the results to verify for a credit sale and partial repayments.
+Read the [architecture](docs/ARCHITECTURE.md), [API proposal](docs/API.md) and [delivery plan](docs/DELIVERY_PLAN.md).
 
 ## Status
 
